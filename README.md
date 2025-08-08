@@ -1,6 +1,6 @@
 # jbkr43.github.io – Roadmaps.sh Project
 
-This repository hosts a simple DevOps-themed landing page for a [roadmaps.sh](https://roadmaps.sh) project, automatically deployed to GitHub Pages using GitHub Actions.
+This repository hosts a simple DevOps-themed landing page for a [roadmap.sh](https://roadmap.sh) project, automatically deployed to GitHub Pages using GitHub Actions.
 
 ## 🚀 Features
 
@@ -27,7 +27,7 @@ The workflow is defined in `.github/workflows/deploy.yml` and includes:
 
 ## 🔗 Links
 
-- [Roadmaps.sh](https://roadmaps.sh)
+- [Roadmap.sh](https://roadmap.sh)
 - [GitHub Pages Settings](https://github.com/jbkr43/jbkr43.github.io/settings/pages)
 - [GitHub Actions Workflow](./.github/workflows/deploy.yml)
 - [Your GitHub Profile](https://github.com/jbkr43)

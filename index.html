@@ -2,52 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jacob</title>
+  <title>DevOps Roadmaps.sh Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #222;
+      background: #181c20;
       color: #fff;
       font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
     }
     .container {
+      background: #23272f;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+      padding: 2.5rem 2rem;
       text-align: center;
-      padding: 2rem;
-      background: #333;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      max-width: 420px;
     }
     h1 {
       color: #00c853;
       margin-bottom: 1rem;
+      font-size: 2.2rem;
     }
     p {
-      color: #ccc;
-      margin-bottom: 2rem;
+      color: #b0b8c1;
+      margin-bottom: 1.5rem;
     }
     .badge {
       display: inline-block;
       background: #00c853;
-      color: #222;
-      padding: 0.5rem 1rem;
+      color: #23272f;
+      padding: 0.5rem 1.2rem;
       border-radius: 999px;
       font-weight: bold;
       font-size: 1rem;
-      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .github-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #24292f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .github-btn:hover {
+      background: #444d56;
+    }
+    .deploy-info {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #8be9fd;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🚀 DevOps Deployed!</h1>
-    <p>This site was automatically deployed using GitHub Actions.</p>
+    <h1>🚀 DevOps Roadmaps.sh Project</h1>
     <div class="badge">CI/CD Powered</div>
+    <p>
+      This project demonstrates automated deployments using GitHub Actions.<br>
+      Every change to <code>index.html</code> is deployed to GitHub Pages.<br>
+      Built for the <a href="https://roadmap.sh" target="_blank" style="color:#00c853;">roadmap.sh</a> community.
+    </p>
+    <a class="github-btn" href="https://github.com/jbkr43" target="_blank">Visit My GitHub</a>
+    <div class="deploy-info">
+      <strong>Last Deployment:</strong>
+      <span id="deploy-date">Loading...</span>
+    </div>
   </div>
+  <script>
+    // Show last deployment date using the build date (set by your workflow)
+    // Replace __BUILD_DATE__ with your workflow's injected value
+    document.getElementById('deploy-date').textContent = "__BUILD_DATE__";
+  </script>
 </body>
 </html>
