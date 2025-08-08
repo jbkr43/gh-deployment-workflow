@@ -34,4 +34,4 @@ The workflow is defined in `.github/workflows/deploy.yml` and includes:
 
 ---
 
-Powered by GitHub Actions &
+Powered by GitHub Actions
